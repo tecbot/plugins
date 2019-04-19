@@ -189,7 +189,11 @@ class _TransactionObserver implements SKTransactionObserverWrapper {
             ? PurchaseError(
                 source: PurchaseSource.AppStore,
                 code: kPurchaseErrorCode,
-                message: transaction.error.userInfo,
+                message: transaction.error.userInfo
+                  ..addAll({
+                    "domain": transaction.error.domain,
+                    "code": transaction.error.code.toString(),
+                  }),
               )
             : null;
       return purchaseDetails;
