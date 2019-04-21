@@ -138,7 +138,9 @@ public class InAppPurchasePlugin implements MethodCallHandler {
             }
             alreadyFinished = true;
             // Consider the fact that we've finished a success, leave it to the Dart side to validate the responseCode.
-            result.success(responseCode);
+            try {
+              result.success(responseCode);
+            } catch(Exception ex) { }
           }
 
           @Override
