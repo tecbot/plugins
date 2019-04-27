@@ -128,6 +128,7 @@
   NSLocale *system = NSLocale.systemLocale;
   NSDictionary *map = [FIAObjectTranslator getMapFromNSLocale:system];
   XCTAssertEqualObjects(map[@"currencySymbol"], system.currencySymbol);
+  XCTAssertEqualObjects(map[@"currencyCode"], system.currencyCode);
 }
 
 @end

@@ -35,6 +35,10 @@ void main() {
         isNot('A'),
       );
       expect(
+        productResponseWrapper.products.first.priceLocale.currencyCode,
+        'USD',
+      );
+      expect(
         productResponseWrapper.invalidProductIdentifiers,
         isNotEmpty,
       );
