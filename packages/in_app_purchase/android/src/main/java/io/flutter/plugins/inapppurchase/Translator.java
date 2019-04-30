@@ -21,7 +21,7 @@ import java.util.List;
     info.put("description", detail.getDescription());
     info.put("freeTrialPeriod", detail.getFreeTrialPeriod());
     info.put("introductoryPrice", detail.getIntroductoryPrice());
-    info.put("introductoryPriceAmountMicros", detail.getIntroductoryPriceAmountMicros());
+    info.put("introductoryPriceMicros", detail.getIntroductoryPriceAmountMicros());
     info.put("introductoryPriceCycles", detail.getIntroductoryPriceCycles());
     info.put("introductoryPricePeriod", detail.getIntroductoryPricePeriod());
     info.put("price", detail.getPrice());
